@@ -1,0 +1,45 @@
+table{
+    height:500px;
+    width:500px;
+    border:1px solid white;
+    top:60px;
+    position:absolute;
+    left:500px;
+}
+tr{
+    width:500px;
+    height:100px;
+    border:1px solid black;
+}
+*{
+    background-color:black;
+    color:white;
+
+}
+#question1{
+    position: absolute;
+    right:300px;
+    background-color: white;
+    color:black
+}
+#question2{
+    position: absolute;
+    right:300px;
+    background-color: white;
+    color:black;
+}
+#question3{
+    position: absolute;
+    right:300px;
+    background-color: white;
+    color:black;
+}
+#submit{
+    position: absolute;
+    right:300px;
+    width:170px;
+    color:black;
+    background-color: white;
+
+
+}
