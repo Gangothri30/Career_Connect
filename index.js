@@ -4,20 +4,38 @@ const form = document.querySelector('.form-input');
 
 
 var output = document.getElementById('output');
+var box = document.querySelector('.box');
 var input = document.getElementById('input');
 
 output.style.visibility = "hidden";
-
+box.style.visibility = "hidden";
 input.style.visibility = "visible";
 
+function draw(){
+    const triangle = document.querySelector('.triangle');
+    var response1 = Number(document.getElementById("question1").value);
+    var response2 = Number(document.getElementById("question2").value);
+    var response3 = Number(document.getElementById("question3").value);
 
+    const num1 = response1*10;
+    const num2 = response2*10;
+    const num3 = response3*10;
+
+    triangle.style.borderBottom = num1 + "px solid grey";
+    triangle.style.borderLeft = num3+ "px solid transparent";
+    triangle.style.borderRight = num2 + "px solid transparent";
+
+}
 
 
 
 form.addEventListener('submit',e => {
 
     output.style.visibility = "visible";
+    box.style.visibility = "visible";
     input.style.visibility = "hidden";
+    
+    draw();
 
     var response1 = Number(document.getElementById("question1").value);
     var response2 = Number(document.getElementById("question2").value);
